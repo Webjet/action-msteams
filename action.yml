@@ -12,6 +12,7 @@ inputs:
   github-token:
     description: Github token
     required: true
+    default: ${{ github.token }}
   environment:
     description: Name of the environment (won't be included in the card if none)
     required: false
@@ -23,7 +24,7 @@ inputs:
   card-layout-start:
     description: Card layout on start (i.e. "complete", "cozy", "compact")
     required: false
-    default: complete
+    default: cozy
   card-layout-exit:
     description: Card layout on end (i.e. "complete", "cozy", "compact")
     required: false
